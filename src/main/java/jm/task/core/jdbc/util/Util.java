@@ -1,8 +1,5 @@
 package jm.task.core.jdbc.util;
 
-//import java.sql.Connection;
-//import java.sql.DriverManager;
-//import java.sql.SQLException;
 import jm.task.core.jdbc.model.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -10,21 +7,9 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 public class Util {
 
-//    private static final String URL = "jdbc:mysql://localhost:3306/users?useSSL=false";
-//    private static final String USERNAME = "root";
-//    private static final String PASSWORD = "1234";
-//
-//    public static Connection getConnection() {
-//        Connection connection = null;
-//        try {
-//            Class.forName("com.mysql.cj.jdbc.Driver");
-//            connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-//            System.out.println("Connection established.");
-//        } catch (ClassNotFoundException | SQLException e) {
-//            System.err.println("Connection failed: " + e.getMessage());
-//        }
-//        return connection;
-//    }
+    private Util() {
+        throw new UnsupportedOperationException("Utility class should not be instantiated");
+    }
 
     private static SessionFactory sessionFactory;
 
